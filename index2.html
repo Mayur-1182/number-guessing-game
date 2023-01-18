@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="scss2/main.css">
+    <script src="jsscript.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="game">
+            <section class="game_score">
+               <div class="secret">
+                🔑
+                </div>
+              
+                <div class="current_score">
+                    <p>
+                        <i class="fa-solid fa-plane"></i>
+                        your score :  <span>20</span>
+                    </p>
+                </div>
+
+                <div class="chances_left">
+                    <p><i class="fa-solid fa-hand-holding-heart"></i>
+                        life left : <span>20</span>
+                    </p>
+                </div>
+
+                <div class="high_score">
+                    <p>
+                         <i class="fa-solid fa-trophy"></i>
+                         high score :  <span>0</span>
+                    </p>
+                </div>
+            </section>
+
+            <section class="game_playing">
+                <div class="instruction">
+                    start guessing 
+                </div>
+
+                <button class="range">between (1-20)</button>
+                <input type="number" class="guess-number">
+
+                <div class="checking">
+                    <button class="reload">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+                    <button class="check">
+                        <i class="fa-solid fa-gem"></i>
+                        check
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

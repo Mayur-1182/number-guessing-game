@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+  color: white;
+  background-color: #3b3b3b;
+}
+
+* button {
+  text-transform: capitalize;
+}
+
+header {
+  border-radius: 1rem;
+  max-width: 50rem;
+  background-color: #000000c8;
+}
+
+header h1 {
+  text-align: center;
+  color: orangered;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+header .restart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .restart button {
+  padding: 1rem;
+  background-color: orange;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 1.25rem;
+}
+
+header .restart p {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+header .score-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.left-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+.left-part button {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.left-part input {
+  padding: 0.25rem;
+  font-size: 2rem;
+  width: 10rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.right-part {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.right-part span {
+  font-weight: 700;
+}
+
+.right-part .correct-number {
+  font-weight: 700;
+}
+
+.secret-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secret-number .guess-btn {
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */

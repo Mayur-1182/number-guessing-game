@@ -1,0 +1,118 @@
+$color-black:black;
+$color-green:yellowgreen;
+$color-orange:orange;
+$color-orangered:orangered;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-size: cover;
+    background-position:center center ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    color: white;
+    background-color: rgb(59, 59, 59);
+   
+}
+
+* button{
+    text-transform: capitalize;
+}
+
+header{
+    border-radius: 1rem;
+    max-width: 50rem;
+    background-color: #000000c8;
+    // padding: 3rem;
+    
+    h1{
+        text-align: center;
+        color: orangered;
+        font-size: 3rem;
+        margin: 2rem 0;
+    }
+
+    .restart{
+        display: flex;
+        justify-content: space-between;
+        gap: 10rem;
+        align-items: center;
+
+        button{
+            padding: 1rem;
+            background-color: orange;
+            border: none;
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-size: 1.25rem;
+        }
+
+        p{
+            font-size: 1.125rem;
+            font-weight: 700;
+        }
+    }
+   .score-description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+   }
+}
+.left-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    button{
+        padding: 1rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    input{
+        padding: 0.25rem;
+        font-size: 2rem;
+        width: 10rem;
+        text-align: center;
+        font-weight: 700;
+
+    }
+}
+
+.right-part{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    
+    span{
+        font-weight: 700;
+
+    }
+    .correct-number{
+        font-weight: 700;
+    }
+}
+.secret-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .guess-btn{
+        padding: 1rem 1.5rem;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
