@@ -8,8 +8,8 @@ let highscore=Number.parseInt(document.querySelector(".high_score span").textCon
 console.log(random_number)
 
 check_btn.addEventListener("click",()=>{
-    
     let input_number=document.querySelector(".guess-number").value
+
     if(!input_number){
         instruction.textContent="no number"
         instruction.style.color="maroon"
@@ -18,6 +18,8 @@ check_btn.addEventListener("click",()=>{
    else if(input_number!=random_number){
         if(score>=1){
             instruction.textContent=input_number<random_number ? " too lower " : " too higher "
+            score = score - 1
+            document.querySelector(".current_score span").textContent = score
         }
         else{
             instruction.textContent=" lost  game"
@@ -25,9 +27,30 @@ check_btn.addEventListener("click",()=>{
         }
   }
     else if(random_number==input_number){
-        // document.querySelector(".secret i").classList.add("hidden")
         instruction.textContent="correct number"
         secret_number.textContent=input_number
+        theme_seccess(secret_number)
+        theme_seccess(check_btn)
+        instruction.style.color="#003300"
+        document.querySelector(".game").style.backgroundColor="yellowgreen"
+
     }
    
+})
+function theme_seccess(element){
+    element.style.backgroundColor="yellowgreen"
+    element.style.color="#003300"
+    element.style.border="2px solid #003300"
+}
+
+function theme(element){
+    element.style.backgroundColor="darkviolet"
+    element.style.color="#35004c"
+    element.style.border="2px solid #35004c"
+}
+
+again_btn.addEventListener("click",()=>{
+    document.querySelector(".game").style.backgroundColor="transparent"
+    theme(secret_number)
+    check_btn.style.backgroundColor="darkviolet"
 })

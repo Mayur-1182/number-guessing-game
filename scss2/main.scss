@@ -1,48 +1,7 @@
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "reset";
+@import "variables";
+@import "utility";
 
-html:focus-within {
-    scroll-behavior: smooth;
-}
-
-a:not([class]) {
-    text-decoration-skip-ink: auto;
-}
-
-img,
-picture {
-    max-width: 100%;
-    display: block;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-        scroll-behavior: auto;
-    }
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-}
-
-a {
-    text-decoration: none;
-}
-
-@mixin border(){
-    border: 2px solid darkviolet;
-    background:linear-gradient(45deg,violet,white,darkviolet);
-}
 
 body {
     min-height: 100vh;
@@ -50,7 +9,11 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url("/scss2/wallpaper.jfif");
-    
+}
+
+@mixin border() {
+    border: 2px solid $color-violet;
+    background: $violet-gradient;
 }
 
 .game {
@@ -59,37 +22,28 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     border-radius: 1rem;
-    box-shadow: 5px 5px 20px rgb(65, 0, 93);
+    box-shadow: 5px 5px 20px $very-dark-violet;
     position: relative;
-    border: 2px solid darkviolet;
+    border: 2px solid $color-violet;
     max-width: 20rem;
 }
 
 .game_score {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     flex-direction: column;
     padding: 0 3rem;
     padding-top: 4rem;
     padding-bottom: 2rem;
-    font-size: 1.5rem;
     font-weight: 500;
-    text-transform: capitalize;
     line-height: 2.5rem;
-
 
     i {
         margin-right: 1rem;
     }
 
-    .secret{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 2px solid darkviolet;
-        background-color: darkviolet;
-        box-shadow: 5px 5px 20px rgb(65, 0, 93);
+    .secret {
+        border: 2px solid $very-dark-violet;
+        background-color: $color-violet;
+        box-shadow: 5px 5px 20px $very-dark-violet;
         font-size: 3rem;
         border-radius: 100%;
         width: 2em;
@@ -99,66 +53,54 @@ body {
         right: 6rem;
         z-index: 1;
     }
-
 }
 
 .game_playing {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
 
     .checking {
-        display: flex;
-        align-items: center;
         gap: 5rem;
 
         button {
             padding: 0.25rem;
             font-weight: 700;
-            font-size: 1.5rem;
             border-radius: 0.25rem;
-            border: 2px solid rgb(32, 0, 46);
+            border: 2px solid $very-dark-violet;
         }
 
         .reload {
             border-radius: 100%;
             font-weight: 700;
-            background-color: darkviolet;
+            background-color: $color-violet;
 
-            &:hover{
+            &:hover {
                 background-color: rgba(255, 255, 255, 0.297);
             }
-
         }
-        .check{
-            background-color: darkviolet;
-            padding: 0.5rem ;
+
+        .check {
+            background-color: $color-violet;
+            padding: 0.5rem;
             transition: 0.3s all ease-in;
 
-            &:hover{
+            &:hover {
                 background-color: rgba(255, 255, 255, 0.297);
             }
         }
-
-        
     }
 
     .instruction {
         font-size: 2rem;
         font-weight: 700;
-        text-transform: capitalize;
-        color: rgb(53, 0, 76);
+        color: $very-dark-violet;
     }
 
     .range {
         @include border();
         border-radius: 0.25rem;
-        text-transform: capitalize;
         padding: 0.5rem;
-        font-size: 1.5rem;
         font-weight: 700;
         border: none;
     }
@@ -166,14 +108,10 @@ body {
     input {
         @include border();
         padding: 0.5rem;
-        font-size: 1.5rem;
         width: 10rem;
         text-align: center;
         font-weight: 700;
-        color: rgb(66, 0, 94);
+        color: $very-dark-violet;
     }
 
-}
-.hidden{
-    visibility: hidden;
 }
