@@ -42,31 +42,6 @@ check_number.addEventListener("click", () => {
         }
 
     }
-
-    // else if (input_number < random_number) {
-    //     if (score > 1) {
-    //         correct_number.textContent = "enter higher number"
-    //         score = score - 1
-    //         document.querySelector(".score").textContent = score
-    //     }
-    //     else {
-    //         correct_number.textContent = "😭 you lost the game"
-    //         document.querySelector(".score").textContent = 0
-    //     }
-    // }
-
-    // else if (input_number > random_number) {
-    //     if (score > 1) {
-    //         correct_number.textContent = "enter lower number"
-    //         score = score - 1
-    //         document.querySelector(".score").textContent = score
-    //     }
-
-    //     else {
-    //         correct_number.textContent = "😭 you lost the game"
-    //         document.querySelector(".score").textContent = 0
-    //     }
-    // }
 })
 
 // new game functunality
