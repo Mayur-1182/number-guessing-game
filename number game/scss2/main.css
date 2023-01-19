@@ -89,7 +89,7 @@ body {
 }
 
 .game {
-  margin: 2rem;
+  margin: 0.5rem;
   margin-top: 5rem;
   display: -ms-grid;
   display: grid;
@@ -205,5 +205,24 @@ body {
   text-align: center;
   font-weight: 700;
   color: #35004c;
+}
+
+@media (max-width: 400px) {
+  .game_score {
+    padding: 0 2rem;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  .game_score .secret {
+    right: 5rem;
+  }
+  .game_playing .instruction {
+    font-size: 1.5rem;
+  }
+  .game_playing button {
+    font-size: 1.25rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -69,8 +69,8 @@ body {
             border-radius: 0.25rem;
             border: 2px solid $very-dark-violet;
         }
-        
-        .newgame{
+
+        .newgame {
             background-color: $color-violet;
             border-radius: 100%;
             padding: 0.5rem;
@@ -123,12 +123,27 @@ body {
 
 }
 
-@media(min-width:400px){
-    .game_score{
+@media(max-width:400px) {
+    .game_score {
         padding: 0 2rem;
         padding-top: 3rem;
         padding-bottom: 1.5rem;
-        color: red;
+        font-size: 1.25rem;
+        text-align: center;
+
+        .secret {
+            right: 5rem;
+        }
     }
-  
+
+    .game_playing {
+        .instruction {
+            font-size: 1.5rem;
+        }
+
+        button {
+            font-size: 1.25rem;
+        }
+    }
+
 }
