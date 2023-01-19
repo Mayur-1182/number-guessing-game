@@ -17,7 +17,7 @@ body {
 }
 
 .game {
-    margin: 2rem;
+    margin: 0.5rem;
     margin-top: 5rem;
     display: grid;
     grid-template-columns: 1fr;
@@ -121,4 +121,14 @@ body {
         color: $very-dark-violet;
     }
 
+}
+
+@media(min-width:400px){
+    .game_score{
+        padding: 0 2rem;
+        padding-top: 3rem;
+        padding-bottom: 1.5rem;
+        color: red;
+    }
+  
 }
