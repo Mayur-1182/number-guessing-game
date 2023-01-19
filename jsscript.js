@@ -68,4 +68,9 @@ again_btn.addEventListener("click",()=>{
     instruction.textContent="start guessing"
     document.querySelector(".current_score span").textContent="20"
     document.querySelector(".chances_left span").textContent="20"
+    document.querySelector("input").value=""
+})
+
+document.querySelector(".newgame").addEventListener("click",()=>{
+    location.reload()
 })

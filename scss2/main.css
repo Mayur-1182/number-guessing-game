@@ -144,7 +144,7 @@ body {
 }
 
 .game_playing .checking {
-  gap: 5rem;
+  gap: 2rem;
 }
 
 .game_playing .checking button {
@@ -152,6 +152,13 @@ body {
   font-weight: 700;
   border-radius: 0.25rem;
   border: 2px solid #35004c;
+}
+
+.game_playing .checking .newgame {
+  background-color: darkviolet;
+  border-radius: 100%;
+  padding: 0.5rem;
+  font-weight: 700;
 }
 
 .game_playing .checking .reload {
